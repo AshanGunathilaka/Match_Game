@@ -7,6 +7,7 @@ import android.content.SharedPreferences
 import android.graphics.Color
 import android.os.Bundle
 import android.os.CountDownTimer
+import android.text.Html
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
@@ -231,6 +232,9 @@ class game2 : AppCompatActivity() {
                     restartButton.performClick()
                 }
 
+                val alertDialog = alertDialogBuilder.create()
+                alertDialog.show()
+
                 // Retrieve existing "game_result" data
                 val existingData = sharedPreferences.getString("game_result", "")
 
@@ -271,12 +275,22 @@ class game2 : AppCompatActivity() {
         }
 
         backButton.setOnClickListener {
-            // Stop the CountDownTimer
-            countDownTimer?.cancel()
+            val alertDialogBuilder = AlertDialog.Builder(this)
+            val cautionMessage = "<font color='#FF0000'><b>Caution:</b> Score will be lost</font>"
+            alertDialogBuilder.setMessage(Html.fromHtml("Do you want to finish the game?<br>$cautionMessage"))
+            alertDialogBuilder.setPositiveButton("Finish") { dialog, which ->
+                // Stop the CountDownTimer
+                countDownTimer?.cancel()
+                var intent = Intent(this,Home::class.java)
+                startActivity(intent)
+                finish()
+            }
+            alertDialogBuilder.setNegativeButton("Cancel") { dialog, which ->
+                dialog.dismiss()
+            }
 
-            var intent = Intent(this,Home::class.java)
-            startActivity(intent)
-            finish()
+            val alertDialog = alertDialogBuilder.create()
+            alertDialog.show()
         }
 
         val TotalValuLetters = arrayOf('1', '2', '3', '4', '5')
@@ -356,7 +370,7 @@ class game2 : AppCompatActivity() {
             }
 
             // Start the countdown timer
-            countDownTimer = object : CountDownTimer(11000, 1000) {
+            countDownTimer = object : CountDownTimer(21000, 1000) {
                 override fun onTick(millisUntilFinished: Long) {
                     // Timer is ticking down
                     timerTextView.text = "Time Remaining: ${millisUntilFinished / 1000}"
