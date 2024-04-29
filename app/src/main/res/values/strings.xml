@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">Match_Game</string>
+
+    <string name="nextbtn01">Next</string>
+    <string name="skipbtn01">Skip</string>
+    <string name="backbtn01">Back</string>
+    <string name="how">How to Play</string>
+    <string name="findnum">Find Pairs Of Number</string>
+    <string name="findnum2">Search for numbers with equal value</string>
+    <string name="findnum3">number that showed up in the screen and select.</string>
+
+
+    <string name="nextbtn02">Next</string>
+    <string name="skipbtn02">Skip</string>
+    <string name="backbtn02">Back</string>
+    <string name="how02">How to Play</string>
+    <string name="findlet">Find Pairs Of Letters</string>
+    <string name="findlet2">Search for Letters with equal value</string>
+    <string name="findlet3">letter that showed up in the screen and select.</string>
+
+
+    <string name="nextbtn03">Next</string>
+    <string name="skipbtn03">Skip</string>
+    <string name="backbtn03">Back</string>
+    <string name="how03">How to Play</string>
+    <string name="findsym">How you can Score</string>
+    <string name="findsym2">You Have to select all the matching</string>
+    <string name="findsym3">Numbers and Letters you will Get a one Score.</string>
+
+
+    <string name="playbtn">PLAY</string>
+    <string name="scorebtnn">SCORE</string>
+
+
+    <string name="home_back">Back</string>
+
+    <string name="letter_btn">Letters</string>
+    <string name="numbers_btn">Numbers</string>
+
+    <string name="helpbtn">PLAY</string>
+    <string name="settingsbtn">SCORE</string>
+
+
+    <string name="start_game">Start Game</string>
+
+    <string name="num_10">A</string>
+    <string name="num_20">B</string>
+    <string name="num_30">C</string>
+    <string name="num_40">D</string>
+    <string name="num_50">A</string>
+
+    <string name="num_60">E</string>
+    <string name="num_70">B</string>
+    <string name="num_80">C</string>
+    <string name="num_90">D</string>
+    <string name="num_100">E</string>
+
+    <string name="num_110">A</string>
+    <string name="num_120">B</string>
+    <string name="num_130">C</string>
+    <string name="num_140">D</string>
+    <string name="num_150">E</string>
+
+
+    <string name="num_160">A</string>
+    <string name="num_170">B</string>
+    <string name="num_180">C</string>
+    <string name="num_190">D</string>
+    <string name="num_200">E</string>
+
+
+    <string name="num_210">A</string>
+    <string name="num_220">B</string>
+    <string name="num_230">C</string>
+    <string name="num_240">D</string>
+    <string name="num_250">E</string>
+
+    <string name="game">Number game</string>
+    <string name="display_num">A</string>
+    <string name="select_num">2</string>
+    <string name="timerTextView">Time Remaining: 10</string>
+    <string name="Score">Score</string>
+    <string name="Scorevalue">0</string>
+
+    <string name="submit_button">Finish</string>
+    <string name="restart_button">Restart</string>
+    <string name="bck_button">Back</string>
+
+    <string name="scorebtn">Score</string>
+    <string name="scorelist">Empty</string>
+    <string name="scorelistt">Score List</string>
+
+
+    <string name="total"></string>
+</resources>

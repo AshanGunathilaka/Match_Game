@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:backgroundTint="@color/background"
+    tools:context=".game">
+
+    <Button
+        android:id="@+id/num_30"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="21dp"
+        android:backgroundTint="@color/btnback01"
+        android:text="@string/num_30"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toEndOf="@+id/num_20"
+        app:layout_constraintTop_toBottomOf="@+id/cardView4"
+        app:strokeColor="#9C27B0"
+        app:strokeWidth="4dp" />
+
+    <Button
+        android:id="@+id/num_80"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="@color/btnback01"
+        android:text="@string/num_80"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toEndOf="@+id/num_70"
+        app:layout_constraintTop_toBottomOf="@+id/num_30"
+        app:strokeColor="#9C27B0"
+        app:strokeWidth="4dp" />
+
+    <Button
+        android:id="@+id/num_40"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="21dp"
+        android:backgroundTint="@color/btnback01"
+        android:text="@string/num_40"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toEndOf="@+id/num_30"
+        app:layout_constraintTop_toBottomOf="@+id/cardView4"
+        app:strokeColor="#9C27B0"
+        app:strokeWidth="4dp" />
+
+    <Button
+        android:id="@+id/num_50"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="@color/btnback01"
+        android:text="@string/num_50"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num_10"
+        app:strokeColor="#9C27B0"
+        app:strokeWidth="4dp" />
+
+    <Button
+        android:id="@+id/num_20"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="21dp"
+        android:backgroundTint="@color/btnback01"
+        android:text="@string/num_20"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toEndOf="@+id/num_10"
+        app:layout_constraintTop_toBottomOf="@+id/cardView4"
+        app:strokeColor="#9C27B0"
+        app:strokeWidth="4dp" />
+
+    <Button
+        android:id="@+id/num_60"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="113dp"
+        android:backgroundTint="@color/btnback01"
+        android:text="@string/num_60"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toEndOf="@+id/num_40"
+        app:layout_constraintTop_toBottomOf="@+id/cardView5"
+        app:strokeColor="#9C27B0"
+        app:strokeWidth="4dp" />
+
+    <Button
+        android:id="@+id/num_70"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="@color/btnback01"
+        android:text="@string/num_70"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toEndOf="@+id/num_50"
+        app:layout_constraintTop_toBottomOf="@+id/num_20"
+        app:strokeColor="#9C27B0"
+        app:strokeWidth="4dp" />
+
+
+    <Button
+        android:id="@+id/num_90"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="@color/btnback01"
+        android:text="@string/num_90"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toEndOf="@+id/num_80"
+        app:layout_constraintTop_toBottomOf="@+id/num_40"
+        app:strokeColor="#9C27B0"
+        app:strokeWidth="4dp" />
+
+    <Button
+        android:id="@+id/num_10"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="113dp"
+        android:backgroundTint="#E91E63"
+        android:text="@string/num_10"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3"
+        app:strokeColor="#9C27B0"
+        app:strokeWidth="4dp" />
+
+    <Button
+        android:id="@+id/num_100"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="@color/btnback01"
+        android:text="@string/num_100"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toEndOf="@+id/num_90"
+        app:layout_constraintTop_toBottomOf="@+id/num_60"
+        app:strokeColor="#9C27B0"
+        app:strokeWidth="4dp" />
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="70dp"
+        android:backgroundTint="#00BCD4"
+        android:text="@string/submit_button"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/white"
+        app:strokeWidth="5dp" />
+
+    <Button
+        android:id="@+id/bck_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#9C27B0"
+        android:text="@string/bck_button"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/white"
+        app:strokeWidth="5dp" />
+
+    <Button
+        android:id="@+id/restart_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#9C27B0"
+        android:text="@string/restart_button"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:strokeColor="@color/white"
+        app:strokeWidth="5dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="190dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="29dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/timerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="05dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/timerTextView"
+            android:textColor="#9C27B0"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView5"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="16dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/Scorevalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/Scorevalue"
+            android:textColor="#9C27B0"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="3dp"
+            android:text="@string/Score"
+            android:textColor="#9C27B0"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="156dp"
+        android:backgroundTint="#00BCD4"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3">
+
+        <TextView
+            android:id="@+id/display_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="05dp"
+            android:text="@string/display_num"
+            android:textColor="@color/white"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/num_110"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="@color/btnback01"
+        android:text="@string/num_110"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num_50"
+        app:strokeColor="#9C27B0"
+        app:strokeWidth="4dp" />
+
+    <Button
+        android:id="@+id/num_120"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="@color/btnback01"
+        android:text="@string/num_120"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toEndOf="@+id/num_110"
+        app:layout_constraintTop_toBottomOf="@+id/num_70"
+        app:strokeColor="#9C27B0"
+        app:strokeWidth="4dp" />
+
+    <Button
+        android:id="@+id/num_150"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="@color/btnback01"
+        android:text="@string/num_150"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toEndOf="@+id/num_140"
+        app:layout_constraintTop_toBottomOf="@+id/num_100"
+        app:strokeColor="#9C27B0"
+        app:strokeWidth="4dp" />
+
+    <Button
+        android:id="@+id/num_140"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="@color/btnback01"
+        android:text="@string/num_140"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toEndOf="@+id/num_130"
+        app:layout_constraintTop_toBottomOf="@+id/num_90"
+        app:strokeColor="#9C27B0"
+        app:strokeWidth="4dp" />
+
+    <Button
+        android:id="@+id/num_130"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="@color/btnback01"
+        android:text="@string/num_130"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toEndOf="@+id/num_120"
+        app:layout_constraintTop_toBottomOf="@+id/num_80"
+        app:strokeColor="#9C27B0"
+        app:strokeWidth="4dp" />
+
+
+    <Button
+        android:id="@+id/num_160"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="@color/btnback01"
+        android:text="@string/num_160"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num_110"
+        app:strokeColor="#9C27B0"
+        app:strokeWidth="4dp" />
+
+    <Button
+        android:id="@+id/num_170"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="@color/btnback01"
+        android:text="@string/num_170"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toEndOf="@+id/num_160"
+        app:layout_constraintTop_toBottomOf="@+id/num_120"
+        app:strokeColor="#9C27B0"
+        app:strokeWidth="4dp" />
+
+    <Button
+        android:id="@+id/num_180"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="@color/btnback01"
+        android:text="@string/num_180"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toEndOf="@+id/num_170"
+        app:layout_constraintTop_toBottomOf="@+id/num_130"
+        app:strokeColor="#9C27B0"
+        app:strokeWidth="4dp" />
+
+    <Button
+        android:id="@+id/num_190"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="@color/btnback01"
+        android:text="@string/num_190"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toEndOf="@+id/num_180"
+        app:layout_constraintTop_toBottomOf="@+id/num_140"
+        app:strokeColor="#9C27B0"
+        app:strokeWidth="4dp" />
+
+    <Button
+        android:id="@+id/num_200"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="@color/btnback01"
+        android:text="@string/num_200"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toEndOf="@+id/num_190"
+        app:layout_constraintTop_toBottomOf="@+id/num_150"
+        app:strokeColor="#9C27B0"
+        app:strokeWidth="4dp" />
+
+    <Button
+        android:id="@+id/num_210"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="@color/btnback01"
+        android:text="@string/num_210"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num_160"
+        app:strokeColor="#9C27B0"
+        app:strokeWidth="4dp" />
+
+    <Button
+        android:id="@+id/num_220"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="@color/btnback01"
+        android:text="@string/num_220"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toEndOf="@+id/num_210"
+        app:layout_constraintTop_toBottomOf="@+id/num_170"
+        app:strokeColor="#9C27B0"
+        app:strokeWidth="4dp" />
+
+    <Button
+        android:id="@+id/num_230"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="@color/btnback01"
+        android:text="@string/num_230"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toEndOf="@+id/num_220"
+        app:layout_constraintTop_toBottomOf="@+id/num_180"
+        app:strokeColor="#9C27B0"
+        app:strokeWidth="4dp" />
+
+    <Button
+        android:id="@+id/num_240"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="@color/btnback01"
+        android:text="@string/num_240"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toEndOf="@+id/num_230"
+        app:layout_constraintTop_toBottomOf="@+id/num_190"
+        app:strokeColor="#9C27B0"
+        app:strokeWidth="4dp" />
+
+    <Button
+        android:id="@+id/num_250"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="@color/btnback01"
+        android:text="@string/num_250"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toEndOf="@+id/num_240"
+        app:layout_constraintTop_toBottomOf="@+id/num_200"
+        app:strokeColor="#9C27B0"
+        app:strokeWidth="4dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
