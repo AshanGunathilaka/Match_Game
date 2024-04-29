@@ -1,5 +1,6 @@
 package com.example.match_game
 
+import android.app.AlertDialog
 import android.graphics.Color
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
@@ -13,6 +14,7 @@ import android.os.CountDownTimer
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
+import android.text.Html
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
@@ -223,7 +225,17 @@ class game : AppCompatActivity() {
 
             } else {
 
-                Toast.makeText(this, "Incorrect", Toast.LENGTH_SHORT).show()
+                //Dialog box
+                val alertDialogBuilder = AlertDialog.Builder(this)
+                alertDialogBuilder.setMessage("You Lost.Try again..")
+                alertDialogBuilder.setPositiveButton("Restart") { dialog, which ->
+                    restartButton.performClick()
+                }
+
+                val alertDialog = alertDialogBuilder.create()
+                alertDialog.show()
+
+                //Toast.makeText(this, "Incorrect", Toast.LENGTH_SHORT).show()
 
                 // Retrieve existing "game_result" data
                 val existingData = sharedPreferences.getString("game_result", "")
@@ -265,12 +277,25 @@ class game : AppCompatActivity() {
         }
 
         backButton.setOnClickListener {
-            // Stop the CountDownTimer
-            countDownTimer?.cancel()
 
-            var intent = Intent(this,Home::class.java)
-            startActivity(intent)
-            finish()
+            val alertDialogBuilder = AlertDialog.Builder(this)
+            val cautionMessage = "<font color='#FF0000'><b>Caution:</b> Score will be lost</font>"
+            alertDialogBuilder.setMessage(Html.fromHtml("Do you want to finish the game?<br>$cautionMessage"))
+            alertDialogBuilder.setPositiveButton("Finish") { dialog, which ->
+                // Stop the CountDownTimer
+                countDownTimer?.cancel()
+                var intent = Intent(this,Home::class.java)
+                startActivity(intent)
+                finish()
+            }
+            alertDialogBuilder.setNegativeButton("Cancel") { dialog, which ->
+                dialog.dismiss()
+            }
+
+            val alertDialog = alertDialogBuilder.create()
+            alertDialog.show()
+
+
         }
 
         val TotalValuLetters = arrayOf('A', 'B', 'C', 'D', 'E')
@@ -350,7 +375,7 @@ class game : AppCompatActivity() {
             }
 
             // Start the countdown timer
-            countDownTimer = object : CountDownTimer(11000, 1000) {
+            countDownTimer = object : CountDownTimer(21000, 1000) {
                 override fun onTick(millisUntilFinished: Long) {
                     // Timer is ticking down
                     timerTextView.text = "Time Remaining: ${millisUntilFinished / 1000}"

@@ -1,5 +1,6 @@
 package com.example.match_game
 
+import android.app.AlertDialog
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
@@ -223,7 +224,12 @@ class game2 : AppCompatActivity() {
 
             } else {
 
-                Toast.makeText(this, "Incorrect", Toast.LENGTH_SHORT).show()
+                //Dialog box
+                val alertDialogBuilder = AlertDialog.Builder(this)
+                alertDialogBuilder.setMessage("You Lost.Try again..")
+                alertDialogBuilder.setPositiveButton("Restart") { dialog, which ->
+                    restartButton.performClick()
+                }
 
                 // Retrieve existing "game_result" data
                 val existingData = sharedPreferences.getString("game_result", "")

@@ -25,7 +25,7 @@ class Home : AppCompatActivity() {
 
         var btnnext = findViewById<Button>(R.id.playbtn)
         btnnext.setOnClickListener {
-            var intent = Intent(this,game::class.java)
+            var intent = Intent(this,Type::class.java)
             startActivity(intent)
             finish()
         }
