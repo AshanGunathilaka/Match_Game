@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:backgroundTint="@color/background"
+    tools:context=".Home">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="65dp"
+        app:layout_constraintBottom_toTopOf="@+id/playbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/e199e5ca_7d6a_472e_a445_dde2fc5a3221" />
+
+    <Button
+        android:id="@+id/playbtn"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="19dp"
+        android:backgroundTint="#F09C27B0"
+        android:text="@string/playbtn"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/scorebtnn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/white"
+        app:strokeWidth="5dp" />
+
+    <Button
+        android:id="@+id/scorebtnn"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="149dp"
+        android:backgroundTint="#F09C27B0"
+        android:text="@string/scorebtn"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/white"
+        app:strokeWidth="5dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/helpbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/help" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
